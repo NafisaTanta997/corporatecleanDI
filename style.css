@@ -1,0 +1,822 @@
+body {
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 50px;
+  line-height: 1.8;
+}
+
+#Logo {
+  position: fixed;
+  top: 6px;
+  font-family: 'Montserrat', sans-serif;
+  padding-right: 5px;
+  -webkit-transition: all 0.5s;
+  margin-left: -35px;
+  margin-top: -11px;
+}
+
+#Logo a{
+  color: #34495e;
+  font-size: 30px;
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: 300;
+}
+
+#Logo a:hover {
+  color: #1abc9c;
+  cursor: pointer;
+}
+
+nav {
+  position: fixed;
+  background-color: white ;
+  padding: 0 3px;
+  width: 100%;
+  margin: 0 auto;
+  text-decoration: none;
+  z-index: 9999;
+}
+
+nav a:link, a:visited{
+  text-decoration: none;
+  color: black;
+}
+
+nav ul li {
+  position: relative;
+  left: 75%;
+  color: white;
+  font-size: 22px;
+  font-family: 'Montserrat', sans-serif;
+  display: inline;
+  margin: 0 20px 0 -70px;
+  padding: 30px;
+  -webkit-transition: all 0.1s;
+}
+
+nav ul li:hover {
+  border-bottom: solid 2px #1abc9c ;
+  cursor: pointer;
+  padding-bottom: 10px;
+}
+
+.heading.border-bottom {
+    position: relative;
+/*     padding-bottom: 30px; */
+    border-bottom: solid 2px #1abc9c;
+    
+}
+
+.heading.border-bottom:before {
+      bottom: 0;
+      position: absolute;
+/*       content: ""; */
+      width: 80px;
+      height: 3px;
+      left: 50%;
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      transform: translateX(-50%);
+/*       background: #58d68d;  */
+}
+
+body .cta {
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: #f2f3f4 ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  
+}
+
+
+
+ body .main-cta {
+   background-image: url("https://cdn.glitch.com/069b7287-0810-4fdd-949e-58c470e13002%2Fchristian-mack-3pDnno1oSUU-unsplash.jpg?v=1588886022303");
+  -webkit-background-size: 650px;
+  -moz-background-size: 650px;
+  -o-background-size: cover;
+   background-size: cover;
+   /*    background-repeat: no-repeat; 
+   background-size: 650px 500px;
+   background-attachment: fixed; 
+   background-position: center; 
+  background-size: 50%;
+  background-size: 3.2em;
+  background-size: 12px;
+  background-size: auto; */
+   
+} 
+ 
+body .main-cta h1 {
+  position: relative;
+  display: block;
+}
+body .main-cta h1 span {
+  height: 24px;
+  margin-bottom: -2px;
+  width: 2px;
+  background: black;
+  opacity: 0;
+  display: inline-block;
+  animation: blink 0.75s linear infinite alternate;
+}
+body .main-cta h1:before {
+  content: "<";
+  position: absolute;
+  top: 2px;
+  left: -28px;
+}
+body .main-cta h1:after {
+  content: ">";
+  position: absolute;
+  top: 2px;
+  right: -28px;
+}
+body .main-cta p {
+  font-size: 26px;
+  
+}
+
+
+body .what-cta {
+  background-color: #eee;
+}
+
+body .what-cta h2 {
+  color:black;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 1.8;
+  
+  border-bottom: solid 2px #1abc9c;
+  
+}
+
+
+body .what-cta .container {
+  max-width: 800px;
+  padding: 20px;
+}
+
+body .cta1 {
+  min-width: 60vw;
+  min-height: 60vh;
+  background-color: #f2f3f4 ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+
+body .what1-cta {
+  background-color: white;
+}
+
+/*body .what1-cta img{
+  width: 100%;
+  align: center;
+}*/
+
+
+body .what1-cta .container {
+  max-width: 800px;
+  padding: 10px;
+}
+
+body .start-cta {
+  background-color: #eee;
+}
+body .start-cta form {
+  width: 300px;
+  position: relative;
+}
+body .start-cta form input {
+  border: 0;
+  padding: 7px 0;
+  border-bottom: 1px solid #ccc;
+  color: #333;
+  width: 100%;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+  background-color: #eee;
+}
+body .start-cta form input:focus {
+  outline: none;
+}
+body .start-cta form input ~ .focus-border {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #39f;
+  transition: 0.4s;
+}
+body .start-cta form input:focus ~ .focus-border {
+  width: 100%;
+  transition: 0.4s;
+  left: 0;
+}
+body .start-cta form p {
+  text-align: center;
+}
+body .start-cta form p button {
+  cursor: pointer;
+  -webkit-appearance: button;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  color: #fff;
+  background-color: #28a745;
+  border-color: #28a745;
+}
+body .start-cta form p button:hover {
+  background-color: #218838;
+  border-color: #1e7e34;
+}
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*  CONSULTATION*/
+.codepen-only {
+  width: 45%;
+  margin: 10vh auto 0;
+}
+
+.component-schedule-a-consultation {
+  * {box-sizing: border-box;}
+  .heading {
+    padding: 1rem;
+    font-size: 1.75rem;
+    font-weight: 600;
+  }
+  form {
+    color: #555;
+    input, select, textarea {
+      font-size: 1rem;
+      border-radius: .25rem;
+      border: 1px solid #aaa;
+      padding: .35rem .5rem;
+      margin: 0 0 1.5rem;
+      width: 100%;
+    }
+    select { 
+      border-radius: .25rem;
+      display: block;
+      height: 2rem;
+      width: calc(49%);
+    }
+    textarea {
+      display: block;
+      margin: 0;
+      height: 4rem;
+    }
+    .appointment-info {
+      padding: 1rem;
+      background-color: #FBFBFB;
+      & > label {
+        margin: 0 0 .5rem;
+        display: block;
+      }
+      fieldset {
+        .labels {
+          margin: 0 0 .5rem;
+        }
+        label {
+          display: inline;
+        }
+        legend {
+          display: inline;
+        }
+        .date-time-wrap {
+          display: block;
+          width: 100%;
+          &:after {
+            content:"";
+            display: table;
+            clear: both;
+          }
+          input {
+            display: block;
+            width: 49%;
+            float: left;
+            &:last-child {
+              float: right;
+            }
+          }
+        }
+      }
+    }
+    .contact-info {
+      padding: 1rem; 
+      label {
+        display: block;
+        margin: 0 0 .5rem;
+      }
+      input {
+        display: block;
+        &#contact_phone {
+          width: 50%;
+        }
+      }
+      button {
+        background-color: #8C8C8C;
+        color: #fff;
+        display: inline-block;
+        padding: .75rem 1rem;
+        border-radius: .25rem;
+        border: 0px;
+        font-weight: 600;
+        font-size: 1rem;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.ui-datepicker {
+	background-color: #fff;
+	border: 1px solid #66AFE9;
+	border-radius: 4px;
+	box-shadow: 0 0 8px rgba(102,175,233,.6);
+	display: none;
+	margin-top: 4px;
+	padding: 10px;
+	width: 240px;
+}
+.ui-datepicker a,
+.ui-datepicker a:hover {
+	text-decoration: none;
+}
+.ui-datepicker a:hover,
+.ui-datepicker td:hover a {
+	color: #2A6496;
+	-webkit-transition: color 0.1s ease-in-out;
+	   -moz-transition: color 0.1s ease-in-out;
+	     -o-transition: color 0.1s ease-in-out;
+	        transition: color 0.1s ease-in-out;
+}
+.ui-datepicker .ui-datepicker-header {
+	margin-bottom: 4px;
+	text-align: center;
+}
+.ui-datepicker .ui-datepicker-title {
+	font-weight: 700;
+}
+.ui-datepicker .ui-datepicker-next {
+  width: 0; 
+  height: 0; 
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 12px solid black;
+  cursor: pointer;
+  &:before {
+    display: none;
+  }
+}
+.ui-datepicker .ui-datepicker-prev {
+  width: 0; 
+  height: 0; 
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent; 
+  border-right: 12px solid black; 
+  cursor: pointer;
+  &:before {
+    display: none;
+  }
+}
+.ui-datepicker .ui-datepicker-prev {
+	float: left;
+	text-align: left;
+}
+.ui-datepicker .ui-datepicker-next {
+	float: right;
+	text-align: right;
+}
+.ui-datepicker .ui-datepicker-prev:before {
+	content: "\e079";
+}
+.ui-datepicker .ui-datepicker-next:before {
+	content: "\e080";
+}
+.ui-datepicker .ui-icon {
+	display: none;
+}
+.ui-datepicker .ui-datepicker-calendar {
+  table-layout: fixed;
+	width: 100%;
+}
+.ui-datepicker .ui-datepicker-calendar th,
+.ui-datepicker .ui-datepicker-calendar td {
+	text-align: center;
+	padding: 4px 0;
+}
+.ui-datepicker .ui-datepicker-calendar td {
+	border-radius: 4px;
+	-webkit-transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
+	   -moz-transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
+	     -o-transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
+	        transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
+}
+.ui-datepicker .ui-datepicker-calendar td:hover {
+	background-color: #eee;
+	cursor: pointer;
+}
+.ui-datepicker .ui-datepicker-calendar td a {
+	text-decoration: none;
+}
+.ui-datepicker .ui-datepicker-current-day {
+	background-color: #4289cc;
+}
+.ui-datepicker .ui-datepicker-current-day a {
+	color: #fff
+}
+.ui-datepicker .ui-datepicker-calendar .ui-datepicker-unselectable:hover {
+	background-color: #fff;
+	cursor: default;
+}
+
+.ui-timepicker-wrapper {
+	overflow-y: auto;
+	height: 150px;
+	width: 6.5em;
+	background: #fff;
+	border: 1px solid #ddd;
+	-webkit-box-shadow:0 5px 10px rgba(0,0,0,0.2);
+	-moz-box-shadow:0 5px 10px rgba(0,0,0,0.2);
+	box-shadow:0 5px 10px rgba(0,0,0,0.2);
+	outline: none;
+	z-index: 10001;
+	margin: 0;
+}
+
+.ui-timepicker-wrapper.ui-timepicker-with-duration {
+	width: 13em;
+}
+
+.ui-timepicker-wrapper.ui-timepicker-with-duration.ui-timepicker-step-30,
+.ui-timepicker-wrapper.ui-timepicker-with-duration.ui-timepicker-step-60 {
+	width: 11em;
+}
+
+.ui-timepicker-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.ui-timepicker-duration {
+	margin-left: 5px; color: #888;
+}
+
+.ui-timepicker-list:hover .ui-timepicker-duration {
+	color: #888;
+}
+
+.ui-timepicker-list li {
+	padding: 3px 0 3px 5px;
+	cursor: pointer;
+	white-space: nowrap;
+	color: #000;
+	list-style: none;
+	margin: 0;
+}
+
+.ui-timepicker-list:hover .ui-timepicker-selected {
+	background: #fff; color: #000;
+}
+
+li.ui-timepicker-selected,
+.ui-timepicker-list li:hover,
+.ui-timepicker-list .ui-timepicker-selected:hover {
+	background: #1980EC; color: #fff;
+}
+
+li.ui-timepicker-selected .ui-timepicker-duration,
+.ui-timepicker-list li:hover .ui-timepicker-duration {
+	color: #ccc;
+}
+
+.ui-timepicker-list li.ui-timepicker-disabled,
+.ui-timepicker-list li.ui-timepicker-disabled:hover,
+.ui-timepicker-list li.ui-timepicker-selected.ui-timepicker-disabled {
+	color: #888;
+	cursor: default;
+}
+
+.ui-timepicker-list li.ui-timepicker-disabled:hover,
+.ui-timepicker-list li.ui-timepicker-selected.ui-timepicker-disabled {
+	background: #f2f2f2;
+}
+
+/* Footer */
+
+#contact-us{
+    background-color: white;
+    color: black;
+    height: 200px;
+    position: relative;
+}
+
+
+footer{
+    background-color: #343434;
+    height: 100px;
+}
+
+/* footer i{
+  font-size: 22px;
+   color: white;
+} */
+
+
+
+/* code for FAQS page */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+body {  
+  margin: 0;
+  font-size: 100%;
+}
+
+/* h2 {
+  text-align: center;
+  font-family: "museo-slab", sans-serif;
+  font-size: 2.5em;
+} */
+
+#faqs {
+  font-size: 0.9em;
+  font-family: Roboto;
+}
+#faqs .questions {
+  background: #FFF;
+  box-shadow: 1px 2px 1px 0 rgba(0, 0, 0, 0.02);
+  width: 800px;
+  margin: 0 auto;
+  max-width: 100%;
+}
+#faqs .questions dl {
+  padding: 0;
+  font-size: 1.1em;
+}
+#faqs .questions dl dt, #faqs .questions dl dd {
+  margin: 0;
+  padding: 2.5% 5% 2.5% 2.5%;
+  list-style: none;
+  position: relative; 
+}
+#faqs .questions dl dt {
+  cursor: pointer;
+  font-weight: 800;
+  position: relative;
+  background: #f0f0f0;
+  box-shadow: 1px 2px 1px 0 rgba(0, 0, 0, 0.02); 
+}
+#faqs .questions dl dt:after {
+  content: '+';
+  font-size: 1.8em;
+  font-weight: 100;
+  position: absolute;
+  display: block;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 20px;
+}
+#faqs .questions dl dt.active {
+  border-bottom: none;
+}
+#faqs .questions dl dt.active:after {
+  content: '-';
+}
+#faqs .questions dl dt:hover {
+  background: #eaeaea;
+}
+#faqs .questions dl dd {
+  font-weight: 100;
+  display: none; 
+}
+#faqs .questions dl dd.active {
+  display: block;
+  border-bottom: 1px solid #EEE; 
+}
+
+.footer_color {
+  color: white;
+  font-size: 22px;
+}
+/*FOOTER*/
+
+/* footer {
+  background: #16222A;
+  background: -webkit-linear-gradient(59deg, #3A6073, #16222A);
+  background: linear-gradient(59deg, #3A6073, #16222A);
+  margin-top:100px;
+}
+
+footer a {
+  color: #fff;
+  font-size: 14px;
+  transition-duration: 0.2s;
+}
+
+footer a:hover {
+  color: #FA944B;
+  text-decoration: none;
+}
+
+
+.copy {
+  font-size: 12px;
+  padding: 10px;
+  border-top: 1px solid #FFFFFF;
+}
+
+.footer-middle {
+  padding-top: 2em;
+  color: white;
+} */
+
+
+/*SOCİAL İCONS*/
+
+/* footer social icons */
+
+ul.social-network {
+  list-style: none;
+  display: inline;
+  margin-left: 0 !important;
+  padding: 0;
+}
+
+ul.social-network li {
+  display: inline;
+  margin: 0 5px;
+}
+
+
+/* footer social icons */
+
+.social-network a.icoFacebook:hover {
+  background-color: #3B5998;
+}
+
+.social-network a.icoLinkedin:hover {
+  background-color: #007bb7;
+}
+
+.social-network a.icoFacebook:hover i,
+.social-network a.icoLinkedin:hover i {
+  color: #fff;
+}
+
+.social-network a.socialIcon:hover,
+.socialHoverClass {
+  color: #44BCDD;
+}
+
+.social-circle li a {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto 0 auto;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+}
+
+.social-circle li i {
+  margin: 0;
+  line-height: 30px;
+  text-align: center;
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.social-circle i {
+  color: #595959;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.social-network a {
+  background-color: #F9F9F9;
+}
+
+body #what2 {
+  font-family: 'Montserrat', sans-serif;
+}
+body .card {
+  text-align: center;
+}
+
+
+/* Schedule US PAGE */
+ .main-services .btn-cont a {
+	 text-decoration: none;
+}
+.main-services .btn-cont .btn {
+	 text-transform: uppercase;
+	 color: black;
+	 text-align: center;
+	 font-family: 'Roboto', sans-serif;
+	 letter-spacing: 1px;
+	 font-size: em(18);
+	 width: 300px;
+	 height: 48px;
+	 background-color: white;
+	 position: relative;
+	 overflow: hidden;
+}
+ .main-services .btn-cont .btn span {
+	 display: block;
+	 margin-top: 12px;
+}
+.main-services .btn-cont .btn:before {
+	 content: "";
+	 display: block;
+	 width: 0;
+	 height: 0;
+	 border-top: 30px solid transparent;
+	 border-bottom: 30px solid transparent;
+	 border-right: 30px solid #ea6446;
+	 position: absolute;
+	 bottom: -37%;
+	 left: -1px;
+	 transform: rotate(-45deg) translateX(-50px);
+	 transition: transform 200ms ease;
+}
+ .main-services .btn-cont .btn:after {
+	 content: "";
+	 display: block;
+	 width: 0;
+	 height: 0;
+	 border-top: 30px solid transparent;
+	 border-bottom: 30px solid transparent;
+	 border-right: 30px solid #ea6446;
+	 position: absolute;
+	 top: -37%;
+	 right: -2px;
+	 transform: rotate(135deg) translateX(-50px);
+	 transition: transform 200ms ease;
+}
+.main-services .btn-cont .btn:hover:before {
+	 transform: rotate(-45deg) translateX(0);
+}
+ .main-services .btn-cont .btn:hover:after {
+	 transform: rotate(135deg) translateX(0);
+}
+ 
+

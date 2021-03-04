@@ -1,0 +1,266 @@
+html {
+  font-size: 20px;
+  font-family: sans-serif;
+}
+html body {
+  font-size: 1rem;
+}
+.codepen-only {
+  width: 45%;
+  margin: 10vh auto 0;
+}
+.component-schedule-a-consultation * {
+  box-sizing: border-box;
+}
+.component-schedule-a-consultation .heading {
+  padding: 1rem;
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+.component-schedule-a-consultation form {
+  color: #555;
+}
+.component-schedule-a-consultation form input,
+.component-schedule-a-consultation form select,
+.component-schedule-a-consultation form textarea {
+  font-size: 1rem;
+  border-radius: .25rem;
+  border: 1px solid #aaa;
+  padding: .35rem .5rem;
+  margin: 0 0 1.5rem;
+  width: 100%;
+}
+.component-schedule-a-consultation form select {
+  border-radius: .25rem;
+  display: block;
+  height: 2rem;
+  width: calc(49%);
+}
+.component-schedule-a-consultation form textarea {
+  display: block;
+  margin: 0;
+  height: 4rem;
+}
+.component-schedule-a-consultation form .appointment-info {
+  padding: 1rem;
+  background-color: #FBFBFB;
+}
+.component-schedule-a-consultation form .appointment-info > label {
+  margin: 0 0 .5rem;
+  display: block;
+}
+.component-schedule-a-consultation form .appointment-info fieldset .labels {
+  margin: 0 0 .5rem;
+}
+.component-schedule-a-consultation form .appointment-info fieldset label {
+  display: inline;
+}
+.component-schedule-a-consultation form .appointment-info fieldset legend {
+  display: inline;
+}
+.component-schedule-a-consultation form .appointment-info fieldset .date-time-wrap {
+  display: block;
+  width: 100%;
+}
+.component-schedule-a-consultation form .appointment-info fieldset .date-time-wrap:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.component-schedule-a-consultation form .appointment-info fieldset .date-time-wrap input {
+  display: block;
+  width: 49%;
+  float: left;
+}
+.component-schedule-a-consultation form .appointment-info fieldset .date-time-wrap input:last-child {
+  float: right;
+}
+.component-schedule-a-consultation form .contact-info {
+  padding: 1rem;
+}
+.component-schedule-a-consultation form .contact-info label {
+  display: block;
+  margin: 0 0 .5rem;
+}
+.component-schedule-a-consultation form .contact-info input {
+  display: block;
+}
+.component-schedule-a-consultation form .contact-info input#contact_phone {
+  width: 50%;
+}
+.component-schedule-a-consultation form .contact-info button {
+  background-color: #8C8C8C;
+  color: #fff;
+  display: inline-block;
+  padding: .75rem 1rem;
+  border-radius: .25rem;
+  border: 0px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.ui-datepicker {
+  background-color: #fff;
+  border: 1px solid #66AFE9;
+  border-radius: 4px;
+  box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+  display: none;
+  margin-top: 4px;
+  padding: 10px;
+  width: 240px;
+}
+.ui-datepicker a,
+.ui-datepicker a:hover {
+  text-decoration: none;
+}
+.ui-datepicker a:hover,
+.ui-datepicker td:hover a {
+  color: #2A6496;
+  -webkit-transition: color 0.1s ease-in-out;
+  -moz-transition: color 0.1s ease-in-out;
+  -o-transition: color 0.1s ease-in-out;
+  transition: color 0.1s ease-in-out;
+}
+.ui-datepicker .ui-datepicker-header {
+  margin-bottom: 4px;
+  text-align: center;
+}
+.ui-datepicker .ui-datepicker-title {
+  font-weight: 700;
+}
+.ui-datepicker .ui-datepicker-next {
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 12px solid black;
+  cursor: pointer;
+}
+.ui-datepicker .ui-datepicker-next:before {
+  display: none;
+}
+.ui-datepicker .ui-datepicker-prev {
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-right: 12px solid black;
+  cursor: pointer;
+}
+.ui-datepicker .ui-datepicker-prev:before {
+  display: none;
+}
+.ui-datepicker .ui-datepicker-prev {
+  float: left;
+  text-align: left;
+}
+.ui-datepicker .ui-datepicker-next {
+  float: right;
+  text-align: right;
+}
+.ui-datepicker .ui-datepicker-prev:before {
+  content: "\e079";
+}
+.ui-datepicker .ui-datepicker-next:before {
+  content: "\e080";
+}
+.ui-datepicker .ui-icon {
+  display: none;
+}
+.ui-datepicker .ui-datepicker-calendar {
+  table-layout: fixed;
+  width: 100%;
+}
+.ui-datepicker .ui-datepicker-calendar th,
+.ui-datepicker .ui-datepicker-calendar td {
+  text-align: center;
+  padding: 4px 0;
+}
+.ui-datepicker .ui-datepicker-calendar td {
+  border-radius: 4px;
+  -webkit-transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
+  -moz-transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
+  -o-transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
+  transition: background-color 0.1s ease-in-out, color 0.1s ease-in-out;
+}
+.ui-datepicker .ui-datepicker-calendar td:hover {
+  background-color: #eee;
+  cursor: pointer;
+}
+.ui-datepicker .ui-datepicker-calendar td a {
+  text-decoration: none;
+}
+.ui-datepicker .ui-datepicker-current-day {
+  background-color: #4289cc;
+}
+.ui-datepicker .ui-datepicker-current-day a {
+  color: #ffffff;
+}
+.ui-datepicker .ui-datepicker-calendar .ui-datepicker-unselectable:hover {
+  background-color: #fff;
+  cursor: default;
+}
+.ui-timepicker-wrapper {
+  overflow-y: auto;
+  height: 150px;
+  width: 6.5em;
+  background: #fff;
+  border: 1px solid #ddd;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  outline: none;
+  z-index: 10001;
+  margin: 0;
+}
+.ui-timepicker-wrapper.ui-timepicker-with-duration {
+  width: 13em;
+}
+.ui-timepicker-wrapper.ui-timepicker-with-duration.ui-timepicker-step-30,
+.ui-timepicker-wrapper.ui-timepicker-with-duration.ui-timepicker-step-60 {
+  width: 11em;
+}
+.ui-timepicker-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.ui-timepicker-duration {
+  margin-left: 5px;
+  color: #888;
+}
+.ui-timepicker-list:hover .ui-timepicker-duration {
+  color: #888;
+}
+.ui-timepicker-list li {
+  padding: 3px 0 3px 5px;
+  cursor: pointer;
+  white-space: nowrap;
+  color: #000;
+  list-style: none;
+  margin: 0;
+}
+.ui-timepicker-list:hover .ui-timepicker-selected {
+  background: #fff;
+  color: #000;
+}
+li.ui-timepicker-selected,
+.ui-timepicker-list li:hover,
+.ui-timepicker-list .ui-timepicker-selected:hover {
+  background: #1980EC;
+  color: #fff;
+}
+li.ui-timepicker-selected .ui-timepicker-duration,
+.ui-timepicker-list li:hover .ui-timepicker-duration {
+  color: #ccc;
+}
+.ui-timepicker-list li.ui-timepicker-disabled,
+.ui-timepicker-list li.ui-timepicker-disabled:hover,
+.ui-timepicker-list li.ui-timepicker-selected.ui-timepicker-disabled {
+  color: #888;
+  cursor: default;
+}
+.ui-timepicker-list li.ui-timepicker-disabled:hover,
+.ui-timepicker-list li.ui-timepicker-selected.ui-timepicker-disabled {
+  background: #f2f2f2;
+}
