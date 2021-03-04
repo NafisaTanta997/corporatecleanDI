@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<!--     <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/services.css" /> -->
+    <link rel="stylesheet" href="/schedule.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://jonthornton.github.io/jquery-timepicker/jquery.timepicker.js"></script>
+    <script src="/schedule.js"></script>
+    
+
+    
+  </head>
+
+  <body>
+
+<div class="codepen-only">
+<!-- Use markup below in theme or thesis files -->
+  
+<div class="component-schedule-a-consultation">
+  <div class="component-wrap">
+    <p class="heading">Schedule a Consultation</p>
+    <form action="#">
+      
+      <div class="appointment-info">
+        <fieldset>
+          <p class="labels">
+            <label for="date-1st">Date</label> &amp; 
+            <label for="time-1st">Time</label>: 
+            <legend>1st Choice</legend>
+          </p>
+          <div class="date-time-wrap">
+            <input type="text" name="contact_1st_choice_date" id="date-1st" placeholder="Date" class="date" required/>
+            <input type="text" name="contact_1st_choice_time" id="time-1st" placeholder="Time" class="time" required/>
+          </div>
+        </fieldset>      
+
+        <fieldset>
+          <p class="labels">
+            <label for="date-2nd">Date</label> &amp; 
+            <label for="time-2nd">Time</label>: 
+            <legend>2nd Choice</legend>
+          </p>
+          <div class="date-time-wrap">
+            <input type="text" name="contact_2nd_choice_date" id="date-2nd" placeholder="Date" class="date" required/>
+            <input type="text" name="contact_2nd_choice_time" id="time-2nd" placeholder="Time" class="time" required/>
+          </div>
+        </fieldset>      
+
+        <select name="contact_office_locations" id="office_locations">
+          <option value="" disabled>Office Location</option>
+          <option value="Location One">Location One</option>
+          <option value="Location Two">Location Two</option>
+          <option value="Location Three">Location Three</option>
+        </select>
+
+        <label for="make_an_appointment_for">I would like to make an appointment for...</label>
+        <textarea name="contact_message" id="make_an_appointment_for"></textarea>
+      </div>
+      
+      <div class="contact-info">
+        <label for="contact_name">Name</label>
+        <input type="text" id="contact_name" name="contact_name"  required/>
+
+        <label for="contact_phone">Phone</label>
+        <input type="tel" id="contact_phone" name="contact_phone" />
+
+        <label for="contact_email">Email</label>
+        <input type="email" id="contact_email" name="contact_email"  required/>
+
+        <button type="submit" id="submit" class="submit">Request Appointment</button>
+      </div>
+      
+    </form>
+  </div>
+</div>
+
+<!-- Use markup above in theme or thesis files -->
+</div>
+  
+    
+  </body>
+</html>
